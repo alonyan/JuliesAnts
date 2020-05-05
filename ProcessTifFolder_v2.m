@@ -114,6 +114,9 @@ for k=1:numel(tifFiles);
     end
 end
 
+totalFood(isnan(totalFood))=[];
+totalAnts(isnan(totalAnts))=[];
+
 %% Plot results
 set(0,'DefaultTextInterpreter', 'tex')
 set(0, 'DefaultAxesFontName', 'Arial')
